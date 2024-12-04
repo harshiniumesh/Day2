@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Hospital Management System</h1>
+    </header>
+    
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Emergency Care</li>
+            <li>Outpatient Services</li>
+            <li>Inpatient Services</li>
+            <li>Surgery</li>
+            <li>Radiology</li>
+        </ul>
+    </section>
+
+    <section id="appointment-booking">
+        <h2>Appointment Booking</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="date">Date:</label><br>
+            <input type="date" id="date" name="date" required><br>
+            <label for="time">Time:</label><br>
+            <input type="time" id="time" name="time" required><br>
+            <input type="submit" value="Book Appointment">
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: info@hospital.com</p>
+    </section>
+
+    <section id="patient-portals">
+        <h2>Patient Portals</h2>
+        <p><a href="#">Access Patient Portal</a></p>
+        <p><a href="#">View Medical Records</a></p>
+    </section>
+
+    <section id="feedback">
+        <h2>Feedback</h2>
+        <form>
+            <label for="feedback-name">Name:</label><br>
+            <input type="text" id="feedback-name" name="feedback-name" required><br>
+            <label for="feedback-message">Feedback:</label><br>
+            <textarea id="feedback-message" name="feedback-message" required></textarea><br>
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </section>
+
+    <section id="directory">
+        <h2>Doctor and Staff Directory</h2>
+        <ul>
+            <li>Dr. John Smith - Cardiologist</li>
+            <li>Dr. Emily Johnson - Pediatrician</li>
+            <li>Dr. Michael Brown - Orthopedic Surgeon</li>
+            <li>Dr. Sarah Davis - Dermatologist</li>
+            <li>Nurse Lisa White - Registered Nurse</li>
+        </ul>
+    </section>
+
+    <section id="specialties">
+        <h2>Specialties</h2>
+        <ul>
+            <li>Cardiology</li>
+            <li>Pediatrics</li>
+            <li>Orthopedics</li>
+            <li>Dermatology</li>
+            <li>General Surgery</li>
+        </ul>
+    </section>
+
+    <section id="educational-resources">
+        <h2>Educational Resources</h2>
+        <p><a href="#">Health Tips</a></p>
+        <p><a href="#">Patient Education Materials</a></p>
+    </section>
+</body>
+</html>

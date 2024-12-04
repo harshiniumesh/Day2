@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hospital Appointment Form</h1>
+        <form action="#" method="post">
+            <!-- Patient Name -->
+            <label for="name">Patient Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            
+            <!-- Patient Age -->
+            <label for="age">Patient Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required>
+            
+            <!-- Contact Number -->
+            <label for="phone">Contact Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            
+            <!-- Email Address -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <!-- Appointment Date -->
+            <label for="date">Appointment Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <!-- Doctor Selection -->
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="">--Choose a Doctor--</option>
+                <option value="cardiologist">Cardiologist</option>
+                <option value="dermatologist">Dermatologist</option>
+                <option value="orthopedic">Orthopedic</option>
+                <option value="pediatrician">Pediatrician</option>
+                <option value="general_physician">General Physician</option>
+            </select>
+            
+            <!-- Additional Symptoms or Notes -->
+            <label for="notes">Symptoms/Notes:</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Describe your symptoms or additional information"></textarea>
+            
+            <!-- Submit Button -->
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+</body>
+</html>
